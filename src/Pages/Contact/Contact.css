@@ -1,0 +1,161 @@
+/* Contact.css */
+
+/* Bagian Kontainer Umum */
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: #f9f9f9;
+}
+
+/* Tambahan animasi dasar (fallback jika AOS tidak digunakan) */
+[data-aos] {
+  opacity: 0;
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+[data-aos].aos-animate {
+  opacity: 1;
+  transform: none;
+}
+
+.class-button {
+  margin-bottom: 20px;
+}
+
+.back-button {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.back-button:hover {
+  background-color: #2980b9;
+}
+
+.contact-title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.contact-title span {
+  color: #3498db;
+}
+
+.contact-desc {
+  text-align: center;
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+/* Konten Utama */
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+/* Formulir Kontak */
+.contact-form {
+  width: 50%;
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Animasi form */
+.contact-form[data-aos="fade-right"] {
+  transform: translateX(-50px);
+}
+.contact-form.aos-animate[data-aos="fade-right"] {
+  transform: translateX(0);
+}
+
+.contact-form label {
+  font-size: 16px;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #333;
+}
+
+/* Info Kontak */
+.contact-info {
+  width: 40%;
+  background-color: black;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+/* Animasi info */
+.contact-info[data-aos="fade-left"] {
+  transform: translateX(50px);
+}
+.contact-info.aos-animate[data-aos="fade-left"] {
+  transform: translateX(0);
+}
+
+.contact-info h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.contact-info p {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.contact-info i {
+  margin-right: 10px;
+  color: #3498db;
+}
+
+/* Ikon Footer */
+.footer-icons {
+  margin-top: 20px;
+}
+
+.footer-icons a {
+  margin-right: 15px;
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-icons a:hover {
+  color: #3498db;
+}

@@ -1,0 +1,40 @@
+.header-container {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 24px;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .header-logo img {
+    width: 40px;
+  }
+  
+  .header-nav {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .header-nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .header-nav .active {
+    background-color: #1a0b3c;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+  }
+  
